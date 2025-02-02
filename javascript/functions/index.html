@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+    let a=100
+
+    function outer(name){
+        let outerVal='black'
+
+        function inner(){
+            let innerVal='white'
+            console.log('inner function ',innerVal)
+            console.log('outrt function ',outerVal)//lexical
+            console.log(a)
+            console.log('hello ',name)
+        }
+
+        return inner
+    }
+
+    let myCall=outer('kani')
+    myCall()
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+// console
+console.log("kanishka");
+console.log(15)
+console.log(15.88)
+console.log(true)
+console.log([12,13,14,15,53])
+console.table({'name':"kanishka",'id':7893})
+console.error("sample error")
+console.warn("warning msg")
+
+
+// type of
+
+var fname="kanishka";
+console.log(fname,typeof(fname))
+
+var num=Symbol()
+console.log(num,typeof(num))
+
+var num1=Symbol()
+console.log(num,typeof(num1))
+
+console.log(num==num1)
+
+
+var detail={
+    name:'kanishka',
+    role:'trainer'
+}
+console.log(detail)
+
+// varibale
+
+// var
+// let
+// const
+
+var b;
+b=30;
+
+var b=30;
+var c=40;
+console.log(b+c)
+
+let f=30;
+let h=40;
+console.log(f+h)
+
+if(true){
+    let num="vaild number"
+    console.log(num)
+}
+
+
+let date= new Date()
+console.log(date)
+
+
+// a=10 
+// a=10+3
+
+
+// x='4';
+// console.log(typeof x)
+// console.log(x==4) // only check the value
+// console.log(x===4) // check both type and value
+
+// type conversion
+// String
+// Number
+// parseFloat
+// parseInt
+// Boolean
+
+
+
+
+// Number to String
+// let x;
+// x=20;
+// console.log(x,typeof x)
+// x=String(x)
+// console.log(x,typeof x)
+
+// String to Number
+// let x;
+// x=false;
+// console.log(x,typeof x)
+// x=Number(x)
+// console.log(x,typeof x)
+
+let x;
+x='true'
+
+
+
+// Prompt
+// let name=prompt('what is your??')
+// console.log('hello ',name)
+
+// String
+// LENGTH
+let st="welcome to javascript";
+console.log(st.length)
+
+// UPPERCASE
+console.log(st.toUpperCase())
+
+// LOWERCASE
+console.log(st.toLowerCase())
+
+// CHARTAT
+console.log(st[9])
+console.log(st.charAt(8))
+
+// INDEXOF
+console.log(st.indexOf('o'))
+
+//LASTINDEXOF
+console.log(st.lastIndexOf('o'))
+
+// REPLACE  or REPLACEALL
+console.log(st.replace('javascript','reactjs'))
+
+// CONCAT --merge
+let st1='welcome';
+let st2='you';
+console.log(st1.concat(st2))
+
+// SLICE
+let v=st.slice(3,10)
+console.log(v)
+
+// SUBSTRING
+console.log(st.substring(3,10))
+
+// SUBSTR
+console.log(st.substr(3,10))
+
+// PADEND
+console.log(st1.padEnd(15,'*'))
+
+// TRIM
+
+let st4="    welcome      to javascript   ";
+console.log(st4.trim())
+
+// charcodeAt()
+console.log(st1.charCodeAt(4))
+
+// SEARCH
+console.log(st.search('too'))
+
+// Includes
+console.log(st.includes('too'))
+
+// STARTSWITH
+console.log(st.startsWith('W'))
+
+
+// Template literals:
+let name="kanishka"
+let role ="trainer"
+
+console.log(name+"is a "+role)
+console.log(`${name} is a ${role}`)
+
+let info="i am a 'trainer's'"
+console.log(`i am a "trainer's"`)
+
+
+
+</script>
+</body>
+</html>

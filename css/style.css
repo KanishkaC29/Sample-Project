@@ -1,0 +1,54 @@
+h3{
+    color: crimson;
+}
+
+
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    font-weight: normal;
+    font-style: italic;
+    text-transform: capitalize;
+    /* letter-spacing: 2em;
+    word-spacing: 1em; */
+    text-align: justify;
+    
+}
+a{
+    text-decoration: none;
+}
+
+p{
+    text-align: justify;
+}
+li::before{
+    list-style-type: none;
+    content: url(../asset/favicon.ico);
+}
+
+
+.a1:visited{
+color: aquamarine;
+}
+
+.a2:link{
+    color: burlywood;
+}
+
+.a3:hover{
+color: chartreuse;
+font-size: 3em;
+}
+input:focus{
+    color: blue;
+    background-color: burlywood;
+}
+
+#para::first-letter{
+    font-size: 2em;
+}
+
+#para::first-line{
+color: brown;
+}
+

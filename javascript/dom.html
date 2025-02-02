@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <p class="data">my student</p>
+        <p class="data"></p>
+
+        <h3 id="hd"></h3>
+        <h4></h4>
+        <h4></h4>
+
+
+    </div>
+
+    <div id="pa">
+
+    </div>
+    <script>
+        let dt= document.getElementById('hd')
+        dt.innerHTML="<p> i am kanishka</p>"
+       dt.id="hel"
+
+        dt.style.color='red'
+
+        let ele=document.getElementsByClassName('data')
+        ele[1].innerHTML="hello world"
+    
+
+        ele[0].textContent+=" kanishka"
+        // ele[0].textContent=" kanishka"
+
+        let h=document.getElementsByTagName("h4")
+        console.log(h)
+        h[0].innerHTML="welcome new day"
+
+        // query selector
+
+
+        let hh=document.querySelectorAll("h4")
+        console.log(hh)
+
+
+        // create element
+        let para=document.createElement('p')
+        para.innerHTML=' i am back ';
+        console.log(para)
+        
+       let dd=document.getElementById('pa')
+       dd.append(para)
+    </script>
+    
+</body>
+</html>

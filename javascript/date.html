@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="data"></h1>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+
+    <script>
+
+        let dt= new Date();
+        console.log(dt)
+        dt.setDate(15)
+        dt.setFullYear(1945)
+        let date=dt.getDate()
+        let day=dt.getDay()
+        let month=dt.getMonth()
+        let year=dt.getFullYear()
+        let min=dt.getMinutes()
+        let hr=dt.getHours()
+        let u=dt.getUTCDate()
+
+
+        let monthList=["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+         let dayList=['Sunday', 'Monday' , 'Tuesday' , 'Wednesday' , 'Thursday' , 'Friday' , 'Saturday']
+        document.getElementById('data').innerHTML=`${date}/${monthList[month]}/${year}/${dayList[day]}/${min}/${hr}/${u}`
+
+        console.log(moment().format('DD'))
+
+
+        // foreach
+
+        let a=[8,9,23,3,45]
+        a.forEach(function(num){
+            console.log(num)
+        })
+
+
+        // spread operator vs rest operator 
+
+        function ab(f,s,...rest){
+
+            console.log(f)
+            console.log(s)
+            console.log(rest)
+
+        }
+
+        ab(12,13,14,100,23)
+
+        // spread
+
+        let ac=[12,13,14]
+        let bv=[100,200,300]
+        let bc=[...ac,,34,76]
+        console.log(bc)
+
+      
+
+        
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // if
+        let num=200;
+        // ==,<,>,>=,<=
+
+        if(num==100){
+            console.log("vaild number")
+        }
+        else{
+            console.log("Invaild number")
+        }
+
+
+        let name="redmi";
+        let mo="15pro";
+        let price =148000;
+
+        if(name=="iphone" && mo=="15pro" && price<=148000){
+            console.log("Ready to purchase")
+        }
+        else{
+            console.log("Not Interested")
+        }
+
+
+        if(name=="iphone"){
+            if(mo=="15pro"){
+                if(price<148000){
+
+                }else{
+                    console.log("Price is too high")
+                }
+            }
+            else{
+                console.log("out of stock")
+            }
+        }
+        else{
+            console.log("phone not avaiable")
+        }
+
+        // else if
+
+        // let A=90;
+        // let B=90;
+        // let C=20;
+
+        // if(A>B && A>C){
+        //    console.log("A is Greater");
+        // }
+        // else if(B>A && B>C){
+        //     console.log("B is Greater") ; 
+        // }
+        // else if(C>A && C>B){
+        //     console.log("C is Greater")
+        // }
+
+// LOOPING
+
+        // while  -->entry level checking
+
+        let a=20; //21
+        while(a<=25){//20<25
+            console.log(a); //20
+            a++ //20+1
+        }
+
+    //   do  -->exit level checking
+
+    let b =30;
+    do{
+        console.log(b);//30
+        b++ //30+1
+    }
+    while(b<=35)
+
+    // for
+
+    for(let i=0;i<=10;i++){
+        console.log("kanishka")
+    }
+
+
+    //       1   2
+    for(let i=0;i<=3;i++){
+        // 3     3.1    3.2  3.4
+        for(let j=0;j<=2;j++){
+            // 3.3
+        console.log(j)
+    }
+    console.log(i)
+    }
+
+
+    switch(2){
+        case 1:
+            console.log('java')
+            break;
+        case 2:
+            console.log('js')
+            break;
+        case 3:
+            console.log('python')
+            break;
+        case 4:
+            console.log('html')
+            break;
+            
+    }
+
+
+    
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // first way
+
+        let detail ={
+            id:4567,
+            loc:"trichy",
+            email:"g@gmail.com",
+            comName:"Greens"
+        }
+
+        console.log(detail)
+        detail.comName="tcs"
+        console.log(detail)
+      
+        // 2WAY
+
+        let info= new Object();
+        info.name="kansihka";
+        info.id=34567;
+        info.pho=9876543217
+        console.log(info)
+
+        // 3WAY
+
+        class MyInfo{
+            
+            constructor(course,cid,fees){
+                this.course=course;
+                this.cid=cid;
+                this.fees=fees;
+
+            }
+
+        }
+
+        let i= new MyInfo("fullstack",12344,30000)
+        console.log(i)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>

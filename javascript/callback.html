@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+    // callback function
+    function callback(){
+        console.log('this is callback function')
+    }
+
+    function sample(fun){
+        fun();
+    }
+    sample(callback)
+
+    // ---------setTimeout-----------
+
+    // setTimeout(function,milisec)
+
+    // setTimeout(function (){
+    //     console.log('successfully downloaded')
+    // },2000)
+
+    // SetInterval(fun,milisec)
+
+    // setInterval(function(){
+    //     console.log('update soon')
+
+    // },3000)
+    
+
+    // promise
+    // promise is an object
+    /*
+    // ------------BY USING VARIABLE----------------
+  let mark= new Promise((resolve,reject)=>{
+  let  myMark = true
+   if(myMark){
+    resolve(1000)
+   }
+   else{
+    reject(1000)
+   }
+    })
+    mark. then((mrk)=>console.log(`my mark is ${mrk}, so i am going to take mbbs`)).
+    catch((mrk)=>console.log(`my mark is < ${mrk}, so i am going to taking other course`))
+
+    // -----------------BY USING FUNCTION-----------------
+
+function mark(){
+ return new Promise((resolve,reject)=>{
+  let  myMark = true
+   if(myMark){
+    resolve(1000)
+   }
+   else{
+    reject(1000)
+   }
+    })
+}
+
+mark(). then((mrk)=>console.log(`my mark is ${mrk}, so i am going to take mbbs`)).
+    catch((mrk)=>console.log(`my mark is < ${mrk}, so i am going totaking other course`))
+    */
+
+    //function(()=>{
+
+    // })
+// PROMISE METHODS
+
+let stdA = new Promise((resolve,reject)=>{
+    let stdJoined=true;
+    if(stdJoined){
+        setTimeout(resolve,2000,'kanishka joined')
+    }
+    else{
+        reject(`kanishka didn't joined`)
+    }
+})
+
+let stdB = new Promise((resolve,reject)=>{
+    let stdJoined=true;
+    if(stdJoined){
+        setTimeout(resolve,3000,'Ashwin joined')
+    }
+    else{
+        reject(`Ashwin didn't joined`)
+    }
+})
+
+let stdC = new Promise((resolve,reject)=>{
+    let stdJoined=false;
+    if(stdJoined){
+        setTimeout(resolve,2000,'bhuvi joined')
+    }
+    else{
+        reject(`bhuvi didn't joined`)
+    }
+})
+//  Promise.all ->
+// Promise.all([stdA,stdB,stdC]).then((msg)=>console.log(msg)).catch((msg)=>console.log(msg))
+
+// allSettled->Fulfills when all promises settle.
+// Promise.allSettled([stdA,stdB,stdC]).then((msg)=>console.log(msg)).catch((msg)=>console.log(msg))
+
+// Promise.any->
+
+// Promise.any([stdA,stdB,stdC]).then((msg)=>console.log(msg)).catch((msg)=>console.log(msg))
+
+// Promise.race
+Promise.race([stdA,stdB,stdC]).then((msg)=>console.log(msg)).catch((msg)=>console.log(msg))
+
+
+
+</script>
+
+
+</body>
+</html>

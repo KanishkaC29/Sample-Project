@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="pro"></div>
+
+    <script>
+    
+    let a=[12,'js',12.34,78,23,true,[12,13,78,44,445]]
+    console.log(a[1])
+    console.log(a[6][1])
+
+    let ar=[[12,13,14],[15,16,17],[15,66,17]]
+    console.log(ar[0][1])
+    console.log(ar[2][1])
+
+
+    let arr=[11,12,13,14,15,16,17]
+    let arr1=[1,2,3,4]
+
+    // length
+   console.log(arr.length) 
+
+    //  add -->push
+        arr.push(18)
+        console.log(arr)
+
+    // remove -->pop
+        arr.pop()
+        console.log(arr)
+    // shift
+    arr.shift()
+    console.log(arr)
+    // unshift
+    arr.unshift(90)
+    console.log(arr)
+
+    //delete
+
+    // delete arr(2)
+    // console.log(arr)
+
+
+    // concat
+    console.log(arr.concat(arr1))
+    console.log(arr,arr1)
+    console.log(...arr,...arr1)
+
+
+    // looping
+    // for
+    console.log("----for----")
+    for(let i=0;i<arr.length;i++){
+        console.log(arr[i])
+    }
+
+    console.log("----of----")
+
+    for(x of arr){
+        console.log(x)
+    }
+
+    console.log("----in----")
+
+//     let obj ={
+//         name:"kansihka",
+//         role:"trainer",
+//         course:"fullstack",
+//     }
+
+//     // only keys
+//    let only_keys= Object.keys(obj)
+
+//     // only values
+//     let only_values=  Object.values(obj)
+
+
+//     for(let i=0;i<only_keys.length;i++){
+//         console.log(only_keys[i]+":"+only_values[i])
+//     }
+
+//     for(y in obj){
+//         console.table(obj)
+//     }
+
+    // console.log(obj.name)
+    // console.log(obj.timing.morn)
+    // for(y of obj){
+    //     console.log(obj)
+    // }
+
+
+    // map
+    // let cname=["java","python","js","reactjs"]
+    // document.getElementById('pro').innerHTML= cname.map((data,i)=>`
+    // <p>${i+1} ${data}</p>`).join('')
+    
+    // reduce
+
+    let num=[12,134,14,13]
+   let mySum=num.reduce(sum)
+
+    function sum(t,v){
+        return t+v
+    }
+    document.getElementById('pro').innerHTML="sum of "+mySum
+
+
+    let aa=[[1,123,32],[4,23,34],[5,34,34]]
+   
+    console.log( aa.flat())
+
+</script>
+</body>
+</html>

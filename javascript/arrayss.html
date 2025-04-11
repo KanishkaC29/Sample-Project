@@ -99,15 +99,18 @@
     // let cname=["java","python","js","reactjs"]
     // document.getElementById('pro').innerHTML= cname.map((data,i)=>`
     // <p>${i+1} ${data}</p>`).join('')
+
     
     // reduce
 
     let num=[12,134,14,13]
-   let mySum=num.reduce(sum)
+   let mySum=num.filter(sum)
 
-    function sum(t,v){
-        return t+v
+    function sum(t){
+        return t>12
     }
+
+
     document.getElementById('pro').innerHTML="sum of "+mySum
 
 
